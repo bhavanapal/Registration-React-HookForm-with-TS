@@ -79,7 +79,7 @@ const Registration = ()=>{
                 </div>
             <br />
             <div className="mb-4">
-                <label>Password</label>
+                <label>Confirm Password</label>
                 <input {...register('confirmPassword',{required:'Confirm Password is Required', validate:(cpwd)=>cpwd==password || 'Password not match'})} type="password" placeholder="Type Confirm Password Here" />
                 {errors && errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
             </div>
