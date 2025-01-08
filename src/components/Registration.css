@@ -1,0 +1,36 @@
+label{
+    display:block;
+    font-size:14px;
+    font-weight:500;
+    color:#374151;
+    margin-bottom:12px;
+}
+
+input{
+    display:block;
+    margin-top:1px;
+    width:100%;
+    border-width:2px;
+    border-color:#d1d5db;
+    border-radius:.25rem;
+}
+.btn--primary{
+    width:40%;
+    background-color:#0ea5e9;
+    color:#fff;
+    border-radius:.5rem;
+    padding:16px
+}
+.btn--secondary{
+    width:40%;
+    background-color:#f1f5f9;
+    color:#0f172a;
+    border-radius:.5rem;
+    padding:16px;
+}
+::placeholder{
+    padding:12px;
+}
+p{
+    color:red;
+}
