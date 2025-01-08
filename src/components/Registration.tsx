@@ -83,10 +83,9 @@ const Registration = ()=>{
                 <input {...register('confirmPassword',{required:'Confirm Password is Required', validate:(cpwd)=>cpwd==password || 'Password not match'})} type="password" placeholder="Type Confirm Password Here" />
                 {errors && errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
             </div>
-            <div className="mb-4">
+            <div className="mb-4 flex gap-4 space-x-2 w-4">
                 <label>Gender</label>
                 <input {...register('gender',{required:'Gender is Required'})}  type="radio" value = "M" /> Male
-                &nbsp;
                 <input {...register('gender',{required:'Gender is Required'})} type="radio" value = "F" /> Female
                 {errors && errors.gender && <p>{errors.gender.message}</p>}
             </div>
